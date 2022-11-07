@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>fhir-usage-engine</artifactId>
+        <groupId>org.poc.fhirusage</groupId>
+        <version>LOCAL-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <name>bloodbank</name>
+    <description>Blood bank  Management</description>
+
+    <artifactId>blood-bank</artifactId>
+
+<dependencies>
+    <dependency>
+        <groupId>org.poc.fhirusage</groupId>
+        <artifactId>core</artifactId>
+        <version>LOCAL-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.10</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        <version> 3.1.4</version>
+        <exclusions>
+            <exclusion>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-client</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-core</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>com.sun.jersey.contribs</groupId>
+                <artifactId>jersey-apache-client4</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+</dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2021.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

@@ -1,0 +1,34 @@
+# MongoDB integration config
+spring:
+  data:
+    mongodb:
+      host: localhost #topoint to other pipelines change here
+      port: 27017
+      username: root
+      password: root
+      database: BloodBank
+
+## Eureka integration config
+#eureka:
+#  instance:
+#    hostname: localhost
+#    port: 8761
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka
+#
+#integration:
+#  mirthBaseUrlRegistration: http://localhost:8072
+#  mirthBaseUrlEncouter: http://localhost:8073
+#  mirthBaseUrlServiceRequest: http://localhost:8075
+#  billingServiceID: sdgt-billing-service
+#  ruleEngineServiceID: rule-engine-service
+#  serviceMasterBaseUrl: http://localhost:8765/masters-service
+#  queueManagementServiceID : que-service
+#  opdServiceID: opd-service
+#  auditTrailServiceID: audit-service
+#  schedulerServiceID: scheduler-service
+#  mastersServiceID: masters-service
+#  emailServiceId: notification-service

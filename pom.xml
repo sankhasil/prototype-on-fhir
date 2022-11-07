@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.5</version>
+    </parent>
+    <groupId>org.poc.fhirusage</groupId>
+    <artifactId>fhir-usage-engine</artifactId>
+    <version>LOCAL-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <licenses>
+        <license>
+            <name>My Own licence</name>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>core</module>
+        <module>blood-bank</module>
+    </modules>
+
+
+
+    <properties>
+
+        <dockerfile.repository.imageName>${project.artifactId}</dockerfile.repository.imageName>
+        <version.mockito-junit-jupiter>3.1.0</version.mockito-junit-jupiter>
+        <version.rest-assured>4.5.1</version.rest-assured>
+        <cucumber.version>7.0.0</cucumber.version>
+        <assertJ.version>3.4.1</assertJ.version>
+        <spring.version>2.7.5</spring.version>
+        <awaitility.version>4.2.0</awaitility.version>
+        <jdk.version>11</jdk.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+</project>
