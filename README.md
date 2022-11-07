@@ -156,3 +156,28 @@ The code system has value sets which are mostly URLs. This url get verified as c
 
 #### Level 3
 ![Level 3](images/Level%203.png)
+
+
+
+# Area of Improvement
+There are known issues and which need to be fixed. I enlist them as area of improvements
+
+- Code is not running. Showing Error Bean creation. I suspect this because version mismatch of Spring boot Mongo dependency
+```
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'procedureResourceOperations': 
+Unsatisfied dependency expressed through field 'extendedProcedureService'; 
+nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'extendedProcedureService' 
+defined in file [/Users/sanky/PersonalProjects/prototype-on-fhir/blood-bank/target/classes/org/poc/bloodbank/service/ExtendedProcedureService.class]: 
+Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'extendedProcedureRepository' defined in org.poc.bloodbank.repository.ExtendedProcedureRepository defined in @EnableMongoRepositories 
+declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: 
+Invocation of init method failed; nested exception is java.lang.reflect.InaccessibleObjectException: 
+Unable to make field private java.lang.String java.util.TimeZone.ID accessible: module java.base does not "opens java.util" to unnamed module @71809907
+```
+
+- The code is not optimized.
+- There a lot of anti-pattern code structure visible.
+- The core library is not optimized
+- There is no Unit test or integration test implemented.
+- The app is not fully configurable. It has a lot of external service dependency.
+
