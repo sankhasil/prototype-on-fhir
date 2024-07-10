@@ -27,7 +27,7 @@ public class RESTCommonAssistant {
 	  /**
 	   * Populates list response.
 	   *
-	   * @param list a response list to return.
+	   * @param collection a response list to return.
 	   * @return a valid {@link ResponseEntity}
 	   */
 	  public static ResponseEntity buildListResponse(final Collection collection) {

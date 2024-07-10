@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.5</version>
+        <version>3.3.1</version>
     </parent>
     <groupId>org.poc.fhirusage</groupId>
     <artifactId>fhir-usage-engine</artifactId>
@@ -32,7 +32,7 @@
         <version.rest-assured>4.5.1</version.rest-assured>
         <cucumber.version>7.0.0</cucumber.version>
         <assertJ.version>3.4.1</assertJ.version>
-        <spring.version>2.7.5</spring.version>
+        <spring.version>3.3.1</spring.version>
         <awaitility.version>4.2.0</awaitility.version>
         <jdk.version>11</jdk.version>
     </properties>

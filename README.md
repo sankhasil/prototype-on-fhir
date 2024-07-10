@@ -146,6 +146,8 @@ The code system has value sets which are mostly URLs. This url get verified as c
 > **Note:** Find more information [here](https://www.hl7.org/fhir/terminology-module.html)
 
 # Building Block View
+## Overall Workflow
+![activity workflow](images/dfd-for-blood-bank-management-system.png)
 ## Component Model
 
 #### Level 1
